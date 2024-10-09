@@ -1,12 +1,16 @@
 # Workflow의 이름
-name: Github Actions 실행하기
+# name: Github Actions 실행하기
 
 # Event: 실행되는 시점을 설정
 # main이라는 브랜치에 push될 때 아래 Workflow를 실행
-on:
-    push:
-        branches:
-            - main
+# on:
+#    push:
+#        branches:
+#            - main
+
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
 
 # 하나의 WOrkflow는 1개 이상의 Job으로 구성되어 있다.
 # 여러 Job는 기본적으로 병렬적으로 수행된다.
